@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+
 
 
 function Navbar() {
@@ -29,11 +31,10 @@ function Navbar() {
 
           {/* Desktop Nav Links */}
           <ul className="hidden lg:flex items-center gap-8 text-sm font-semibold uppercase whitespace-nowrap">
-            <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Home</a></li>
-            <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">About</a></li>
-            <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Teams</a></li>
-            <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Programs</a></li>
-            <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Join KK</a></li>
+            <li> <Link to="/" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Home</Link></li>
+            <li> <Link to="/about" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">About</Link></li>
+            <li> <Link to="/teams" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Teams</Link></li>
+            <li> <Link to="/programs" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Programs</Link></li>
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Events</a></li>
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Book Us</a></li>
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Donate</a></li>
@@ -49,10 +50,10 @@ function Navbar() {
       {isOpen && (
         <div className="lg:hidden bg-black border-t border-zinc-800 px-6 py-4">
           <ul className="flex flex-col gap-4 text-sm font-semibold uppercase">
-            <li><a href="#" className="hover:text-red-600 transition-colors">Home</a></li>
-            <li><a href="#" className="hover:text-red-600 transition-colors">About</a></li>
-            <li><a href="#" className="hover:text-red-600 transition-colors">Teams</a></li>
-            <li><a href="#" className="hover:text-red-600 transition-colors">Programs</a></li>
+            <li> <Link to="/" className="hover:text-red-600 transition-colors">Home</Link></li>
+            <li> <Link to="/about" className="hover:text-red-600 transition-colors">About</Link></li>
+            <li> <Link to="/teams" className="hover:text-red-600 transition-colors">Teams</Link></li>
+            <li> <Link to="/programs" className="hover:text-red-600 transition-colors">Programs</Link></li>
             <li><a href="#" className="hover:text-red-600 transition-colors">Join KK</a></li>
             <li><a href="#" className="hover:text-red-600 transition-colors">Events</a></li>
             <li><a href="#" className="hover:text-red-600 transition-colors">Book Us</a></li>

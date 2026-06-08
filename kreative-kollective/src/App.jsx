@@ -1,15 +1,38 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Mission from "./components/Mission";
-import Teams from "./components/Teams"
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Teams from "./pages/Teams";
+import Programs from "./pages/Programs";
+// import JoinKK from "./pages/JoinKK";
+// import Events from "./pages/Events";
+// import BookUs from "./pages/BookUs";
+// import Donate from "./pages/Donate";
+// import Gallery from "./pages/Gallery";
+// import Contact from "./pages/Contact";
+
+
+
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <Mission />
-      <Teams />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/teams" element={<Teams />} />
+        <Route path="/programs" element={<Programs />} />
+        {/*
+        
+        <Route path="/join" element={<JoinKK />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/book-us" element={<BookUs />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} /> 
+        */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
