@@ -2,7 +2,7 @@ import heroImage from "../assets/kk-nationals.JPEG";
 
 function Teams() {
   return (
-    <section className="bg-neutral-900 text-white py-16 md:px-12">
+    <section className="bg-neutral-900 text-white py-16 px-6 md:px-12">
       {/* Header with golden lines */}
       <div className="flex items-center gap-4 mb-10 ">
         <div className="flex-1 h-px bg-yellow-500" />
@@ -45,7 +45,7 @@ function Teams() {
         </div>
 
         <div className="flex flex-col items-center text-center">
-          <img src={heroImage} className="w-full object-cover border-2 border-white-500 mb-4" alt="Kreative Kontrol" />
+          <img src={heroImage} className="w-full object-cover border-2 border-white mb-4" alt="Kreative Kontrol" />
           <h3 className="text-xl font-black uppercase">KREATIVE KINGZ</h3>
           <p className="text-red-500 font-bold uppercase text-sm tracking-wider mt-1">ALL MALE TEAM</p>
           <p className="text-gray-300 text-sm mt-2">Grades 6-12</p>

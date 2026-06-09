@@ -28,7 +28,7 @@ function Hero() {
         <div className="mt-4 md:mt-6 flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3">
           <a
             href="#join"
-            className="text-center bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-colors duration-200"
+            className="text-center bg-red-600 md:hover:bg-red-700 active:bg-red-900 active:scale-95 text-white font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-all duration-200"
           >
             Join the Kollective
           </a>
