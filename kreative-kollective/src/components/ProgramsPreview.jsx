@@ -11,7 +11,7 @@ function Programs() {
       style={{ backgroundImage: `url(${programsBg})` }}
     >
       {/* Left — Heading */}
-      <div className="shrink-0">
+      <div className="shrink-0 flex flex-col items-center md:items-start text-center md:text-left">
         <h2 className="text-4xl font-black uppercase leading-tight"> Our <br /> <span className="text-yellow-500">Programs</span> </h2>
       </div>
 
