@@ -1,7 +1,7 @@
-import UnderConstruction from "../components/UnderConstruction";
+import Navbar from "../components/Navbar";
 
 function About() {
-  return <UnderConstruction />;
+  return <Navbar/>;
 }
 
 export default About;

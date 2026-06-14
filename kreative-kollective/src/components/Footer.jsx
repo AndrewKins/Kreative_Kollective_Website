@@ -4,7 +4,7 @@ import heroImage from "../assets/kk-nationals.JPEG";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white py-10 px-6 md:px-12">
+    <footer className="bg-[#0B0B0B] text-white py-10 px-6 md:px-12">
       <div className="flex flex-col md:flex-row gap-10 md:gap-0">
 
         {/* Col 1 — Logo */}

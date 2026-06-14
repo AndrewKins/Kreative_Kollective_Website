@@ -29,7 +29,7 @@ function Teams() {
             Building the foundation, Learning discipline, teamwork, and the art
             of stepping
           </p>
-          <button className="mt-4 border-2 border-white text-white font-bold uppercse tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">Learn More</button>
+          <button className="mt-4 border-2 border-white text-white font-bold uppercse tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200 ">Learn More</button>
         </div>
 
         <div className="flex flex-col items-center text-center">
