@@ -34,11 +34,11 @@ function Navbar() {
             <li> <Link to="/" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Home</Link></li>
             <li> <Link to="/about" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">About</Link></li>
             <li> <Link to="/teams" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Teams</Link></li>
-            <li> <Link to="/programs" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Programs</Link></li>
+            {/* <li> <Link to="/programs" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Programs</Link></li> */}
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Events</a></li>
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Book Us</a></li>
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Donate</a></li>
-            <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Gallery</a></li>
+            {/* <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Gallery</a></li> */}
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Contact</a></li>
           </ul>
 
@@ -53,12 +53,12 @@ function Navbar() {
             <li> <Link to="/" className="hover:text-red-600 transition-colors">Home</Link></li>
             <li> <Link to="/about" className="hover:text-red-600 transition-colors">About</Link></li>
             <li> <Link to="/teams" className="hover:text-red-600 transition-colors">Teams</Link></li>
-            <li> <Link to="/programs" className="hover:text-red-600 transition-colors">Programs</Link></li>
-            <li><a href="#" className="hover:text-red-600 transition-colors">Join KK</a></li>
+            {/* <li> <Link to="/programs" className="hover:text-red-600 transition-colors">Programs</Link></li> */}
+            {/* <li><a href="#" className="hover:text-red-600 transition-colors">Join KK</a></li> */}
             <li><a href="#" className="hover:text-red-600 transition-colors">Events</a></li>
             <li><a href="#" className="hover:text-red-600 transition-colors">Book Us</a></li>
             <li><a href="#" className="hover:text-red-600 transition-colors">Donate</a></li>
-            <li><a href="#" className="hover:text-red-600 transition-colors">Gallery</a></li>
+            {/* <li><a href="#" className="hover:text-red-600 transition-colors">Gallery</a></li> */}
             <li><a href="#" className="hover:text-red-600 transition-colors">Contact</a></li>
           </ul>
         </div>

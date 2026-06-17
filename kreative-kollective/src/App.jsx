@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Teams from "./pages/Teams";
-import Programs from "./pages/Programs";
+// import Programs from "./pages/Programs";
 // import JoinKK from "./pages/JoinKK";
 // import Events from "./pages/Events";
 // import BookUs from "./pages/BookUs";
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/teams" element={<Teams />} />
-        <Route path="/programs" element={<Programs />} />
+        {/* <Route path="/programs" element={<Programs />} /> */}
         {/*
         
         <Route path="/join" element={<JoinKK />} />

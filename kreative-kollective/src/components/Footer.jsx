@@ -1,26 +1,15 @@
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaFacebookF, FaTiktok, FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import heroImage from "../assets/kk-nationals.JPEG";
 
 function Footer() {
   return (
-    <footer className="bg-[#0B0B0B] text-white py-10 px-6 md:px-12">
-      <div className="flex flex-col md:flex-row gap-10 md:gap-0">
+    <footer className="bg-black text-white py-10 px-6 md:px-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-        {/* Col 1 — Logo */}
-        <div className="md:w-1/8 md:pr-8 flex flex-col items-start justify-center">
-          <img src={heroImage} alt="KK Logo" className="w-20 mb-3" />
-          <p className="font-black uppercase text-lg leading-tight">
-          </p>
-        </div>
-
-        {/* Divider */}
-        <div className="hidden md:block w-px bg-zinc-700 mx-4" />
-
-        {/* Col 2 — Contact Us */}
-        <div className="md:w-1/4 md:px-8">
+        {/* Col 1 — Contact Us */}
+        <div>
           <h3 className="text-yellow-500 font-black uppercase text-sm tracking-wider mb-4">Contact Us</h3>
-          <ul className="flex flex-col gap-2 text-sm text-gray-300">
+          <ul className="flex flex-col gap-3 text-sm text-gray-300">
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-white shrink-0" />
               info@kreativekollective.org
@@ -34,7 +23,7 @@ function Footer() {
               Brooklyn, NY | Bronx, NY
             </li>
           </ul>
-          <div className="flex items-center gap-3 mt-4">
+          <div className="flex items-center gap-3 mt-5">
             <FaInstagram className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
             <FaFacebookF className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
             <FaYoutube className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
@@ -43,13 +32,10 @@ function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="hidden md:block w-px bg-zinc-700 mx-4" />
-
-        {/* Col 3 — Quick Links */}
-        <div className="md:w-1/4 md:px-8">
+        {/* Col 2 — Quick Links */}
+        <div>
           <h3 className="text-yellow-500 font-black uppercase text-sm tracking-wider mb-4">Quick Links</h3>
-          <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-gray-300">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-gray-300">
             <a href="/about" className="hover:text-yellow-500 transition-colors">About Us</a>
             <a href="/events" className="hover:text-yellow-500 transition-colors">Events</a>
             <a href="/teams" className="hover:text-yellow-500 transition-colors">Our Teams</a>
@@ -61,14 +47,21 @@ function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="hidden md:block w-px bg-zinc-700 mx-4" />
-
-        {/* Col 4 — Stay Connected */}
-        <div className="md:w-1/4 md:pl-8">
+        {/* Col 3 — Stay Connected */}
+        <div>
           <h3 className="text-yellow-500 font-black uppercase text-sm tracking-wider mb-4">Stay Connected</h3>
           <p className="text-gray-300 text-sm leading-relaxed">
             Follow us on social media and stay updated on events, performances, and more!
+          </p>
+        </div>
+
+        {/* Col 4 — Brand */}
+        <div className="flex flex-col justify-center">
+          <p className="font-black uppercase text-2xl leading-tight">
+            <span className="text-red-600">Kreative</span> Kollective
+          </p>
+          <p className="text-yellow-500 text-xs uppercase tracking-widest mt-2 font-bold">
+            Step. Lead. Create. Ascend.
           </p>
         </div>
 
