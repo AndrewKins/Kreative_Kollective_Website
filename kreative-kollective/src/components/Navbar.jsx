@@ -9,12 +9,12 @@ function Navbar() {
 
   return (
     <nav className="bg-black text-white border-b border-zinc-800">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-8xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
 
 
           {/* Logo - Update to IMAGE LATER*/}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-1">
             <div className="text-red-600 text-4xl font-black">KK</div>
             <div>
               <h1 className="font-bold uppercase tracking-wide">Kreative</h1>
@@ -36,7 +36,7 @@ function Navbar() {
             <li> <Link to="/teams" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Teams</Link></li>
             {/* <li> <Link to="/programs" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Programs</Link></li> */}
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Events</a></li>
-            <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Book Us</a></li>
+            <li><Link to="/bookus" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Book Us</Link></li>
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Donate</a></li>
             {/* <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Gallery</a></li> */}
             <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Contact</a></li>
@@ -56,7 +56,7 @@ function Navbar() {
             {/* <li> <Link to="/programs" className="hover:text-red-600 transition-colors">Programs</Link></li> */}
             {/* <li><a href="#" className="hover:text-red-600 transition-colors">Join KK</a></li> */}
             <li><a href="#" className="hover:text-red-600 transition-colors">Events</a></li>
-            <li><a href="#" className="hover:text-red-600 transition-colors">Book Us</a></li>
+            <li> <Link to="/bookus" className="hover:text-red-600 transition-colors">Book Us</Link></li>
             <li><a href="#" className="hover:text-red-600 transition-colors">Donate</a></li>
             {/* <li><a href="#" className="hover:text-red-600 transition-colors">Gallery</a></li> */}
             <li><a href="#" className="hover:text-red-600 transition-colors">Contact</a></li>
