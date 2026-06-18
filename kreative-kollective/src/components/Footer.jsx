@@ -3,7 +3,7 @@ import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white py-10 px-6 md:px-12">
+    <footer className=" font-['Rye'] bg-black text-white py-10 px-6 md:px-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
         {/* Col 1 — Contact Us */}

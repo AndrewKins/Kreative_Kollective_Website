@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className="bg-black text-white px-6 py-16 md:px-16 md:py-24">
+    <section className=" font-['Rye'] bg-black text-white px-6 py-16 md:px-16 md:py-24">
       <div className="max-w-6xl mx-auto space-y-20">
         {/* Story Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -13,31 +13,17 @@ function About() {
 
             <div className="space-y-4 text-zinc-200 text-lg leading-relaxed">
               <p>
-                Kreative Kollective was created from a love for step, culture,
-                mentorship, and youth empowerment.
+                Kreative Kollective was founded in 2021 by <span className="text-red-500"> Kevin “Koach K” McGee</span>, an educator and lifelong stepper from the South Bronx. Inspired by the coaches and mentors who shaped his own journey, Koach K set out to create a space where young people could grow through stepping, leadership, and creative expression.
               </p>
 
               <p>
-                What began as a vision to build strong performers grew into
-                something much bigger: a community where young people could be
-                challenged, supported, and celebrated. Through step, students
-                learn discipline, confidence, teamwork, leadership, and pride in
-                who they are.
+                What began as Kreative Kontrol Step Team in the basement of Brownsville Collegiate Charter School with just 11 founding members has grown into Kreative Kollective—a nationally recognized youth arts organization with three competitive teams: Kreative Kontrol, Kreative Kaliber, and Kreative Kingz.
               </p>
 
               <p>
-                Kreative Kollective exists to give youth more than choreography.
-                It gives them structure, family, opportunity, and a platform to
-                express themselves. Every practice, performance, competition,
-                and community event is designed to help students grow both on
-                and off the stage.
+                Today, we continue to empower youth through our core values of Kreativity, Knowledge, Kommunity, and Kharakter, developing confident leaders both on and off the stage.
               </p>
 
-              <p>
-                Rooted in New York City culture and powered by the energy of its
-                young people, Kreative Kollective continues to build leaders one
-                count at a time.
-              </p>
             </div>
           </div>
 
@@ -60,7 +46,7 @@ function About() {
 
         {/* Founder Bio Section */}
         <div className="border-t border-zinc-800 pt-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Kevin Image */}
             <div className="bg-zinc-950 border border-zinc-800 min-h-[420px] flex items-center justify-center overflow-hidden">
               {/* Add Kevin's image src later */}
@@ -89,30 +75,20 @@ function About() {
 
               <div className="space-y-4 text-zinc-300 text-lg leading-relaxed">
                 <p>
-                  Kevin McGee is the founder and coach of Kreative Kollective, a
-                  youth step and leadership organization dedicated to developing
-                  young people through performance, discipline, mentorship, and
-                  culture.
+                  Kevin “Koach K” McGee is an educator, performing artist, and youth mentor from the South Bronx, New York. He began stepping in 2012 at his alma mater, MS 223: The Laboratory School of Finance & Technology, as a member of Quiet Storm Step Team. He later continued his stepping journey with Mecca Unleashed Step Team in Brooklyn, where he served as Team Captain during his senior year of high school.
                 </p>
 
                 <p>
-                  With a deep passion for step and youth development, Kevin
-                  created Kreative Kollective to provide students with a space
-                  where they could grow as performers, leaders, and individuals.
-                  His coaching style centers on discipline, confidence,
-                  teamwork, creativity, and accountability.
+                  A Dance major at Lower Manhattan Arts Academy High School and graduate of Morehouse College with a Bachelor of Arts in Theatre & Performance, Kevin founded Kreative Kollective in 2021 to empower youth through stepping, leadership, and the performing arts.
                 </p>
 
                 <p>
-                  Through his leadership, Kreative Kollective has become more
-                  than a team. It is a community built on hard work, family,
-                  excellence, and purpose.
+                  Today, he continues to develop the next generation through Kreative Kollective’s core values:
+
                 </p>
 
                 <p>
-                  Kevin believes that step can teach young people lessons that
-                  extend far beyond the stage, helping them develop the
-                  confidence and character needed to succeed in life.
+                 Kreativity. Knowledge. Kommunity. Kharakter.
                 </p>
               </div>
 

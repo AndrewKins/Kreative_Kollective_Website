@@ -8,14 +8,16 @@ function Teams() {
     kontrol: {
       label: "Kreative Kontrol",
       title: "The Story of Kreative Kontrol",
-      division: "Youth Step Division",
-      grades: "Grades 6–8",
-      teamType: "All Girls Team",
+      division: "Middle School Division",
+      grades: "Grades 5–8",
+      teamType: "Co-Ed Team",
       logoLabel: "Kreative Kontrol Logo",
-      principles: ["Discipline", "Confidence", "Sisterhood", "Growth"],
+      principles: ["Knowledge", "Optimism", "Never Be Normal", "Transcendence", "Respect", "Opulence", "Leadership"  ],
       story: [
-        "Kreative Kontrol was created to give young girls a space to grow through step, discipline, confidence, and performance.",
-        "The team focuses on building strong fundamentals while helping students understand the importance of teamwork, accountability, and stage presence. Every practice is designed to challenge students while also giving them room to develop their own voice and identity.",
+        "Founded in 2021, Kreative Kontrol is the founding team of Kreative Kollective, serving students in grades 5-8. ",
+
+        "Through stepping, mentorship, leadership development, and community engagement, Kontrol empowers young people to become confident performers, leaders, and changemakers.",
+        
         "Through Kreative Kontrol, students learn that step is more than choreography. It is culture, focus, unity, and expression. The team gives young performers the opportunity to build confidence, represent their community, and grow as leaders both on and off the stage.",
       ],
       photos: ["Photo 1", "Photo 2", "Photo 3"],
@@ -24,15 +26,17 @@ function Teams() {
     kaliber: {
       label: "Kreative Kaliber",
       title: "The Story of Kreative Kaliber",
-      division: "Junior Varsity Division",
+      division: "High School Division",
       grades: "Grades 9–12",
       teamType: "Co-Ed Team",
       logoLabel: "Kreative Kaliber Logo",
-      principles: ["Precision", "Control", "Unity", "Excellence"],
+      principles: ["Knowledge", "Ambition", "Leadership", "Integrity", "Boldness","Excellence", "Resilience"],
       story: [
-        "Kreative Kaliber represents growth, precision, and development within Kreative Kollective. This team is built for steppers who are learning how to sharpen their skills, strengthen their confidence, and perform with purpose.",
-        "The team focuses on discipline, musicality, teamwork, performance quality, and creative expression. Members are pushed to grow not only as performers, but as young leaders who understand the value of commitment and consistency.",
-        "Kreative Kaliber gives students the opportunity to raise their standard. Through practices, performances, and community events, the team helps young people develop the confidence, control, and presence needed to represent Kreative Kollective with pride.",
+        "Kreative Kaliber is the co-ed high school performance team of Kreative Kollective and the proud 2026 House Party National Step Show Champions.",
+        
+        "Comprised of talented and dedicated student performers, the team exemplifies excellence through advanced stepping, leadership, discipline, and artistic expression.",
+
+        "As champions, Kreative Kaliber represents the next generation of performers who are committed to teamwork, creativity, and community impact. Their achievements on the national stage reflect countless hours of hard work, perseverance, and a shared passion for the art of stepping.",
       ],
       photos: ["Photo 1", "Photo 2", "Photo 3"],
     },
@@ -44,7 +48,7 @@ function Teams() {
       grades: "Grades 6–12",
       teamType: "All Boys Team",
       logoLabel: "Kreative Kingz Logo",
-      principles: ["Brotherhood", "Respect", "Leadership", "Purpose"],
+      principles: ["Knowledge ", "Innovation ", "Nobility", "Greatness", "Zeal"],
       story: [
         "Kreative Kingz was created to give young men a space to build discipline, confidence, brotherhood, and leadership through step.",
         "This team focuses on strength, precision, accountability, and unity. Through step, members learn how to carry themselves with pride, support one another, and develop the confidence to lead both on and off the stage.",
@@ -74,7 +78,7 @@ function Teams() {
   }
 
   return (
-    <section className="bg-black text-white px-6 py-16 md:px-16 md:py-24">
+    <section className="font-['Rye'] bg-black text-white px-6 py-16 md:px-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         {/* Page Intro */}
         <div className="max-w-4xl mb-12">

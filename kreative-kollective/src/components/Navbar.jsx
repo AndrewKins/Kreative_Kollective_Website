@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import kklogo from "../assets/kreative_kollective_logo_transparent.png"
 
 
 
@@ -8,18 +9,18 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-black text-white border-b border-zinc-800">
+    <nav className=" font-['Rye'] bg-black text-white border-b border-zinc-800">
       <div className="max-w-8xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
 
 
           {/* Logo - Update to IMAGE LATER*/}
           <div className="flex items-center gap-3 flex-1">
-            <div className="text-red-600 text-4xl font-black">KK</div>
-            <div>
+            <img src={kklogo} alt="Kreative Kollective logo" className="h-20 w-20 object-contain" />
+            {/* <div>
               <h1 className="font-bold uppercase tracking-wide">Kreative</h1>
-              <p className="text-xs text-zinc-400 uppercase">Kollective</p>
-            </div>
+              <p className="text-xs textred-400 uppercase">Kollective</p>
+            </div> */}
           </div>
 
 

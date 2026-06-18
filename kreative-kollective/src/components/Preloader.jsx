@@ -14,7 +14,7 @@ function Preloader({ onComplete }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden"
+      className="font-['Rye'] fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden"
       style={{
         background: phase === "flash" ? "#cc0000" : "#000000",
         transition: phase === "flash" ? "background 0.05s" : "background 0.3s",

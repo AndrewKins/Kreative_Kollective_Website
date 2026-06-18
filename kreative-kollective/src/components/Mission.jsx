@@ -2,7 +2,7 @@ import { FaCrown, FaTrophy, FaShieldAlt, FaUsers, FaMapMarkerAlt } from "react-i
 
 function Mission() {
   return (
-    <section className="bg-gradient-to-br from-black via-zinc-900 to-stone-800 text-white py-6 px-6 md:px-10">
+    <section className=" font-['Rye'] bg-gradient-to-br from-black via-zinc-900 to-stone-800 text-white py-6 px-6 md:px-10">
     {/* Mission Section with Dark Smoky Background */}
       <div className="flex flex-col md:flex-row items-center gap-6">
         {/* Main layout: stacks on mobile, sits side by side on desktop */}

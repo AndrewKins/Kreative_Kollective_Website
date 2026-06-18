@@ -2,7 +2,7 @@
 
 function BookUs() {
   return (
-    <main className="bg-black text-white">
+    <main className="font-['Rye'] bg-black text-white">
       {/* Hero */}
       <section className="relative min-h-[35vh] flex items-center justify-center px-6 border-b border-zinc-800">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-950 to-zinc-900"></div>

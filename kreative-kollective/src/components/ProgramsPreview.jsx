@@ -6,7 +6,7 @@ import programsBg from "../assets/programsbg.png";
 function Programs() {
   return (
     <section
-      className="text-white py-8 px-6 md:px-10 flex flex-col md:flex-row items-center gap-6 bg-cover bg-center bg-no-repeat"
+      className="font-['Rye'] text-white py-8 px-6 md:px-10 flex flex-col md:flex-row items-center gap-6 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${programsBg})` }}
     >
       {/* Left — Heading */}
