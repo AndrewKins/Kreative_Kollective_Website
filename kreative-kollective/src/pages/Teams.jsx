@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import Footer from "../components/Footer";
 
 import kontrollogo from "../assets/kreative_kontrol_logo_transparent.png";
 import kaliberlogo from "../assets/kreative_kaliber_logo_transparent.png";
@@ -107,6 +108,7 @@ function Teams() {
   }
 
   return (
+    <>
     <section className="font-['Rye'] bg-black text-white px-6 py-16 md:px-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         {/* Page Intro */}
@@ -284,6 +286,8 @@ function Teams() {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 }
 

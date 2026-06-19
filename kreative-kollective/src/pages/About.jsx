@@ -1,10 +1,11 @@
 import kkteamphoto from "../assets/kreative_kollective_team_photo.JPEG"
 import kevbio from "../assets/kevin_bio.JPG"
-
+import Footer from "../components/Footer";
 
 
 function About() {
   return (
+    <>
     <section className=" font-['Rye'] bg-black text-white px-6 py-16 md:px-16 md:py-24">
       <div className="max-w-6xl mx-auto space-y-20">
         {/* Story Section */}
@@ -128,6 +129,8 @@ function About() {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
 

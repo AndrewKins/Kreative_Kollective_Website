@@ -1,5 +1,7 @@
+import Footer from "../components/Footer";
 function BookUs() {
   return (
+    <>
     <section className="font-['Rye'] bg-black text-white">
       {/* Hero */}
       <div className="relative min-h-[35vh] flex items-center justify-center px-6 border-b border-zinc-800">
@@ -68,6 +70,8 @@ function BookUs() {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
 

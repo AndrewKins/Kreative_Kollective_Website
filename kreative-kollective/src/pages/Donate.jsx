@@ -1,11 +1,12 @@
 import kreativekollectiveteam from "../assets/kreative-kollective.JPG"
-
+import Footer from "../components/Footer";
 function Donate() {
   const goFundMeLink = "https://www.gofundme.com/f/help-kreative-kollective-compete-nationally";
   const cashAppLink = "https://cash.app/$kreativekollective21";
   const cashAppName = "$kreativekollective21";
 
   return (
+    <>
     <main className="bg-black text-white font-['Rye']">
       {/* Hero Section */}
       <section className="px-6 py-20 md:px-16 md:py-28 border-b border-zinc-800">
@@ -168,6 +169,8 @@ function Donate() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   );
 }
 

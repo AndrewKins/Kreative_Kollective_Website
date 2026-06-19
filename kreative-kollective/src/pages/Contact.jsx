@@ -1,9 +1,12 @@
+import Footer from "../components/Footer";
+
 function Contact() {
   const email = "kreativekollective@gmail.com";
   const instagramUrl = "https://www.instagram.com/kreativekollectivenyc";
   const instagramHandle = "@kreativekollectivenyc";
 
   return (
+    <>
     <section className="bg-black text-white font-['Rye']">
       <div className="px-6 py-20 md:px-16 md:py-28">
         <div className="max-w-3xl mx-auto text-center">
@@ -74,6 +77,8 @@ function Contact() {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
 
