@@ -3,7 +3,7 @@ import kontrollogo from "../assets/kreative_kontrol_logo_transparent.png"
 import kaliberlogo from "../assets/kreative_kaliber_logo_transparent.png"
 import kingzlogo from "../assets/kreative_kingz_logo_transparent.png"
 
-import kontrolgalleryOne from "../assets/kontrol_gallery_1.JPEG"
+import kontrolgalleryOne from "../assets/kreative_kontrol_gallery.JPEG"
 import kontrolgalleryTwo from "../assets/kontrol_gallery_2.JPEG"
 import kontrolgalleryThree from "../assets/kontrol_gallery_3.JPEG"
 
