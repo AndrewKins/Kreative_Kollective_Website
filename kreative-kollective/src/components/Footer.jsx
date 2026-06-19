@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaFacebookF, FaTiktok, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
           <ul className="flex flex-col gap-3 text-sm text-gray-300">
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-white shrink-0" />
-              info@kreativekollective.org
+              kreativekollective@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <FaPhone className="text-white shrink-0" />
@@ -24,11 +24,11 @@ function Footer() {
             </li>
           </ul>
           <div className="flex items-center gap-3 mt-5">
-            <FaInstagram className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
+            <FaInstagram  className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
             <FaFacebookF className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
             <FaYoutube className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
             <FaTiktok className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
-            <FaTwitter className="text-2xl hover:text-yellow-500 cursor-pointer transition-colors" />
+
           </div>
         </div>
 
@@ -40,9 +40,9 @@ function Footer() {
             <a href="/events" className="hover:text-yellow-500 transition-colors">Events</a>
             <a href="/teams" className="hover:text-yellow-500 transition-colors">Our Teams</a>
             <a href="/book-us" className="hover:text-yellow-500 transition-colors">Book Us</a>
-            <a href="/programs" className="hover:text-yellow-500 transition-colors">Programs</a>
+            {/* <a href="/programs" className="hover:text-yellow-500 transition-colors">Programs</a> */}
             <a href="/donate" className="hover:text-yellow-500 transition-colors">Donate</a>
-            <a href="/join" className="hover:text-yellow-500 transition-colors">Join KK</a>
+            {/* <a href="/join" className="hover:text-yellow-500 transition-colors">Join KK</a> */}
             <a href="/contact" className="hover:text-yellow-500 transition-colors">Contact</a>
           </div>
         </div>
@@ -69,7 +69,7 @@ function Footer() {
 
       {/* Bottom bar */}
       <div className="mt-10 border-t border-zinc-800 pt-4 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} Kreative Kollective. All rights reserved.
+        © {new Date().getFullYear()} Kreative Kollective. All rights reserved. 
       </div>
 
     </footer>

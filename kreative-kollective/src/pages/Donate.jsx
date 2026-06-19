@@ -1,7 +1,9 @@
+import kreativekollectiveteam from "../assets/kreative-kollective.JPG"
+
 function Donate() {
-  const goFundMeLink = "https://www.gofundme.com/your-link-here";
-  const cashAppLink = "https://cash.app/$YourCashAppHere";
-  const cashAppName = "$YourCashAppHere";
+  const goFundMeLink = "https://www.gofundme.com/f/help-kreative-kollective-compete-nationally";
+  const cashAppLink = "https://cash.app/$kreativekollective21";
+  const cashAppName = "$kreativekollective21";
 
   return (
     <main className="bg-black text-white font-['Rye']">
@@ -54,7 +56,7 @@ function Donate() {
           {/* Team Image */}
           <div className="bg-zinc-950 border border-zinc-800 h-[420px] md:h-[520px] overflow-hidden">
             <img
-              src="/images/donate-team-photo.jpg"
+              src={kreativekollectiveteam}
               alt="Kreative Kollective team"
               className="w-full h-full object-cover"
             />

@@ -1,9 +1,14 @@
-import heroImage from "../assets/kk-nationals.JPEG";
+// import heroImage from "../assets/kk-nationals.JPEG";
+import heroVideo from "../assets/IMG_2074.mp4";
 function Hero() {
   return (
     <section className=" font-['Rye']  relative h-[420px] md:h-[520px] text-white overflow-hidden">
-      <img
-        src={heroImage}
+      <video
+        src={heroVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
         alt="Kreative Kollective"
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -27,7 +32,7 @@ function Hero() {
 
         <div className="mt-4 md:mt-6 flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3">
           <a
-            href="#join"
+            href="join"
             className="text-center bg-red-600 md:hover:bg-red-700 active:bg-red-900 active:scale-95 text-white font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-all duration-200"
           >
             Join the Kollective

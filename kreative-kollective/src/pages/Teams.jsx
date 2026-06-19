@@ -66,7 +66,7 @@ function Teams() {
       label: "Kreative Kingz",
       logo: kingzlogo,
       title: "The Story of Kreative Kingz",
-      division: "Boys Step Division",
+      division: "All Divisions",
       grades: "Grades 6–12",
       teamType: "All Boys Team",
       logoLabel: "Kreative Kingz Logo",
