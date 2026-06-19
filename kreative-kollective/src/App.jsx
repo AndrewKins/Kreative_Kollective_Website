@@ -6,11 +6,11 @@ import Teams from "./pages/Teams";
 import BookUs from "./pages/BookUs";
 // import Programs from "./pages/Programs";
 // import JoinKK from "./pages/JoinKK";
-// import Events from "./pages/Events";
+import Events from "./pages/Events";
 // import BookUs from "./pages/BookUs";
-// import Donate from "./pages/Donate";
+import Donate from "./pages/Donate";
 // import Gallery from "./pages/Gallery";
-// import Contact from "./pages/Contact";
+import Contact from "./pages/Contact";
 
 
 
@@ -24,13 +24,12 @@ function App() {
         <Route path="/teams" element={<Teams />} />
         {/* <Route path="/programs" element={<Programs />} /> */}
         
-        
         {/* <Route path="/join" element={<JoinKK />} /> */}
-        {/* <Route path="/events" element={<Events />} /> */}
+        <Route path="/events" element={<Events />} />
         <Route path="/bookus" element={<BookUs />} />
-        {/* <Route path="/donate" element={<Donate />} /> */}
+        <Route path="/donate" element={<Donate />} />
         {/* <Route path="/gallery" element={<Gallery />} /> */}
-        {/* <Route path="/contact" element={<Contact />} />  */}
+        <Route path="/contact" element={<Contact />} /> 
   
       </Routes>
     </BrowserRouter>

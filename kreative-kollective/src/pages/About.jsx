@@ -1,3 +1,8 @@
+import kkteamphoto from "../assets/kreative_kollective_team_photo.JPEG"
+import kevbio from "../assets/kevin_bio.JPG"
+
+
+
 function About() {
   return (
     <section className=" font-['Rye'] bg-black text-white px-6 py-16 md:px-16 md:py-24">
@@ -30,17 +35,13 @@ function About() {
           {/* Story Image */}
           <div className="bg-zinc-950 border border-zinc-800 min-h-[520px] flex items-center justify-center overflow-hidden">
             {/* Add your image src later */}
-            {/* 
+            
             <img
-              src="/images/your-story-image.jpg"
+              src={kkteamphoto}
               alt="Kreative Kollective team"
               className="w-full h-full object-cover"
             />
-            */}
-
-            <p className="text-zinc-500 uppercase tracking-widest text-sm">
-              Story Image
-            </p>
+           
           </div>
         </div>
 
@@ -50,17 +51,13 @@ function About() {
             {/* Kevin Image */}
             <div className="bg-zinc-950 border border-zinc-800 min-h-[420px] flex items-center justify-center overflow-hidden">
               {/* Add Kevin's image src later */}
-              {/* 
+              
               <img
-                src="/images/kevin-mcgee.jpg"
+                src={kevbio}
                 alt="Kevin McGee"
                 className="w-full h-full object-cover"
               />
-              */}
-
-              <p className="text-zinc-500 uppercase tracking-widest text-sm">
-                Kevin McGee Photo
-              </p>
+            
             </div>
 
             {/* Kevin Bio */}
@@ -106,7 +103,7 @@ function About() {
                 <div className="border border-zinc-800 p-4 bg-black">
                   <p className="text-yellow-500 font-black uppercase">Coach</p>
                   <p className="text-sm text-zinc-400 mt-1">
-                    Youth Step Program
+                    Youth Arts & Leadership Organization
                   </p>
                 </div>
 

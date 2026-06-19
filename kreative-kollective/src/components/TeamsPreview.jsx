@@ -29,8 +29,8 @@ function Teams() {
           <p className="text-red-500 font-bold uppercase text-sm tracking-wider mt-1">Middle School Co-Ed</p>
           <p className="text-gray-300 text-sm met-2">Grades 6-8</p>
           <p className="text-gray-300 text-sm mt-2">
-            Building the foundation, Learning discipline, teamwork, and the art
-            of stepping
+            Building the Foundation, Learning Discipline & Teamwork.
+            
           </p>
           <button className="mt-4 border-2 border-white text-white font-bold uppercse tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200 ">Learn More</button>
         </div>
@@ -41,8 +41,7 @@ function Teams() {
           <p className="text-red-500 font-bold uppercase text-sm tracking-wider mt-1">HIGH SCHOOL CO-ED</p>
           <p className="text-gray-300 text-sm mt-2">Grades 9-12</p>
           <p className="text-gray-300 text-sm mt-2">
-            Elevating skill, leadership, and performance to compete at the
-            highest level.
+            Elevating Skill, Leadership & Performance at the Highest Level.
           </p>
           <button className="mt-4 border-2 border-white text-white font-bold uppercase tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">Learn More</button>
         </div>
@@ -53,8 +52,7 @@ function Teams() {
           <p className="text-red-500 font-bold uppercase text-sm tracking-wider mt-1">ALL MALE TEAM</p>
           <p className="text-gray-300 text-sm mt-2">Grades 6-12</p>
           <p className="text-gray-300 text-sm mt-2">
-            Developing young men of character, strength, and excellence through
-            brotherhood and step.
+            Developing Young Men of Character, Strength & Excellence.
           </p>
           <button className="mt-4 border-2 border-white text-white font-bold uppercase tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">Learn More</button>
         </div>

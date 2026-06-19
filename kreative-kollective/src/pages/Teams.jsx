@@ -1,4 +1,23 @@
 import { useState } from "react";
+import kontrollogo from "../assets/kreative_kontrol_logo_transparent.png"
+import kaliberlogo from "../assets/kreative_kaliber_logo_transparent.png"
+import kingzlogo from "../assets/kreative_kingz_logo_transparent.png"
+
+import kontrolgalleryOne from "../assets/kontrol_gallery_1.JPEG"
+import kontrolgalleryTwo from "../assets/kontrol_gallery_2.JPEG"
+import kontrolgalleryThree from "../assets/kontrol_gallery_3.JPEG"
+
+import kalibergalleryOne from "../assets/kaliber_gallery_1.JPG"
+import kalibergalleryTwo from "../assets/kaliber_gallery_2.JPEG"
+import kalibergalleryThree from "../assets/kaliber_gallery_3.JPG"
+
+import kingzgalleryOne from "../assets/kingz_gallery_1.JPG"
+import kingzgalleryTwo from "../assets/kingz_gallery_2.JPG"
+import kingzgalleryThree from "../assets/kingz_gallery_3.JPG"
+
+
+
+
 
 function Teams() {
   const [activeTeam, setActiveTeam] = useState("kontrol");
@@ -7,6 +26,7 @@ function Teams() {
   const teams = {
     kontrol: {
       label: "Kreative Kontrol",
+      logo: kontrollogo,
       title: "The Story of Kreative Kontrol",
       division: "Middle School Division",
       grades: "Grades 5–8",
@@ -20,11 +40,12 @@ function Teams() {
         
         "Through Kreative Kontrol, students learn that step is more than choreography. It is culture, focus, unity, and expression. The team gives young performers the opportunity to build confidence, represent their community, and grow as leaders both on and off the stage.",
       ],
-      photos: ["Photo 1", "Photo 2", "Photo 3"],
+      photos: [kontrolgalleryOne, kontrolgalleryTwo, kontrolgalleryThree],
     },
 
     kaliber: {
       label: "Kreative Kaliber",
+      logo: kaliberlogo,
       title: "The Story of Kreative Kaliber",
       division: "High School Division",
       grades: "Grades 9–12",
@@ -38,11 +59,12 @@ function Teams() {
 
         "As champions, Kreative Kaliber represents the next generation of performers who are committed to teamwork, creativity, and community impact. Their achievements on the national stage reflect countless hours of hard work, perseverance, and a shared passion for the art of stepping.",
       ],
-      photos: ["Photo 1", "Photo 2", "Photo 3"],
+      photos: [kalibergalleryOne, kalibergalleryTwo , kalibergalleryThree],
     },
 
     kingz: {
       label: "Kreative Kingz",
+      logo: kingzlogo,
       title: "The Story of Kreative Kingz",
       division: "Boys Step Division",
       grades: "Grades 6–12",
@@ -54,7 +76,7 @@ function Teams() {
         "This team focuses on strength, precision, accountability, and unity. Through step, members learn how to carry themselves with pride, support one another, and develop the confidence to lead both on and off the stage.",
         "Kreative Kingz represents more than performance. It is a brotherhood built on respect, growth, and purpose. The team gives young men a place to be challenged, celebrated, and developed into leaders.",
       ],
-      photos: ["Photo 1", "Photo 2", "Photo 3"],
+      photos: [kingzgalleryOne, kingzgalleryTwo, kingzgalleryThree],
     },
   };
 
@@ -118,17 +140,15 @@ function Teams() {
             {/* Logo Placeholder */}
             <div className="bg-black border border-zinc-800 h-[220px] mb-8 flex items-center justify-center overflow-hidden">
               {/* Add logo later */}
-              {/*
+              
               <img
-                src="/images/kreative-kontrol-logo.png"
+                src={currentTeam.logo}
                 alt={`${currentTeam.label} logo`}
                 className="max-h-full max-w-full object-contain p-6"
               />
-              */}
+             
 
-              <p className="text-zinc-500 uppercase tracking-widest text-sm">
-                {currentTeam.logoLabel}
-              </p>
+             
             </div>
 
             <p className="text-yellow-500 uppercase tracking-[0.25em] font-bold text-sm mb-3">
@@ -230,24 +250,22 @@ function Teams() {
 
           <div className="bg-zinc-950 border border-zinc-800 h-[420px] md:h-[620px] flex items-center justify-center overflow-hidden">
             {/* Replace placeholder with image later */}
-            {/*
+            
             <img
               src={currentTeam.photos[activePhoto]}
               alt={`${currentTeam.label} recent photo ${activePhoto + 1}`}
-              className="w-full h-full object-cover"
+              className="max-h-[620px] w-auto object-contain"
             />
-            */}
+           
 
-            <p className="text-zinc-500 uppercase tracking-widest text-sm">
-              {currentTeam.label} {currentTeam.photos[activePhoto]}
-            </p>
+          
           </div>
 
           {/* Photo Dots */}
           <div className="flex justify-center gap-3 mt-6">
             {currentTeam.photos.map((photo, index) => (
               <button
-                key={photo}
+                key={index}
                 onClick={() => setActivePhoto(index)}
                 className={`h-3 w-3 rounded-full ${
                   activePhoto === index ? "bg-red-600" : "bg-zinc-700"

@@ -8,7 +8,7 @@ function Hero() {
         className="absolute inset-0 h-full w-full object-cover"
       />
 
-      <div className=" absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/20" />
 
       <div className="relative z-10 flex flex-col justify-center items-center text-center md:items-start md:text-left h-full px-6 md:px-16">
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase leading-none tracking-tight">
