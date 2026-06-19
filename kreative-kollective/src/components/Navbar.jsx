@@ -1,72 +1,110 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import kklogo from "../assets/kreative_kollective_logo_transparent.png"
-
-
+import kklogo from "../assets/kreative_kollective_logo_transparent.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navItems = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/teams", label: "Teams" },
+    { to: "/events", label: "Events" },
+    { to: "/bookus", label: "Book Us" },
+    { to: "/donate", label: "Donate" },
+    { to: "/contact", label: "Contact" },
+  ];
+
+  function closeMenu() {
+    setIsOpen(false);
+  }
+
   return (
-    <nav className=" font-['Rye'] bg-black text-white border-b border-zinc-800">
+    <nav className="font-['Rye'] bg-black text-white border-b border-zinc-800 relative z-50">
       <div className="max-w-8xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
 
-
-          {/* Logo - Update to IMAGE LATER*/}
+          {/* Logo */}
           <div className="flex items-center gap-3 flex-1">
             <img src={kklogo} alt="Kreative Kollective logo" className="h-20 w-20 object-contain" />
-            {/* <div>
-              <h1 className="font-bold uppercase tracking-wide">Kreative</h1>
-              <p className="text-xs textred-400 uppercase">Kollective</p>
-            </div> */}
           </div>
 
-
-           {/* Hamburger Button */}
-          <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {/* Hamburger Button — morphs into X */}
+          <button
+            className="lg:hidden relative z-50 h-8 w-8 flex flex-col items-center justify-center gap-1.5"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            <span
+              className={`block h-0.5 w-7 bg-white rounded-full transition-all duration-300 ${
+                isOpen ? "rotate-45 translate-y-[7px]" : ""
+              }`}
+            />
+            <span
+              className={`block h-0.5 w-7 bg-white rounded-full transition-all duration-300 ${
+                isOpen ? "opacity-0" : "opacity-100"
+              }`}
+            />
+            <span
+              className={`block h-0.5 w-7 bg-white rounded-full transition-all duration-300 ${
+                isOpen ? "-rotate-45 -translate-y-[7px]" : ""
+              }`}
+            />
           </button>
-
 
           {/* Desktop Nav Links */}
           <ul className="hidden lg:flex items-center gap-8 text-sm font-semibold uppercase whitespace-nowrap">
-            <li> <Link to="/" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Home</Link></li>
-            <li> <Link to="/about" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">About</Link></li>
-            <li> <Link to="/teams" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Teams</Link></li>
-            {/* <li> <Link to="/programs" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Programs</Link></li> */}
-            <li> <Link to="/events" href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Events</Link></li>
-            <li> <Link to="/bookus" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Book Us</Link></li>
-            <li> <Link to="/donate" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Donate</Link></li>
-            {/* <li><a href="#" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Gallery</a></li> */}
-            <li><Link to="/contact" className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2">Contact</Link></li>
+            {navItems.map((item) => (
+              <li key={item.to}>
+                <Link
+                  to={item.to}
+                  className="border-b-2 border-transparent hover:border-red-600 hover:text-red-600 pb-2 transition-colors duration-200"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
-
 
         </div>
       </div>
 
-           {/* Mobile Menu */}
-      {isOpen && (
-        <div className="lg:hidden bg-black border-t border-zinc-800 px-6 py-4">
-          <ul className="flex flex-col gap-4 text-sm font-semibold uppercase">
-            <li> <Link to="/" className="hover:text-red-600 transition-colors">Home</Link></li>
-            <li> <Link to="/about" className="hover:text-red-600 transition-colors">About</Link></li>
-            <li> <Link to="/teams" className="hover:text-red-600 transition-colors">Teams</Link></li>
-            {/* <li> <Link to="/programs" className="hover:text-red-600 transition-colors">Programs</Link></li> */}
-            {/* <li><a href="#" className="hover:text-red-600 transition-colors">Join KK</a></li> */}
-            <li> <Link to="/events" className="hover:text-red-600 transition-colors">Events</Link></li>
-            <li> <Link to="/bookus" className="hover:text-red-600 transition-colors">Book Us</Link></li>
-            <li> <Link to="/donate" className="hover:text-red-600 transition-colors">Donate</Link></li>
-            {/* <li><a href="#" className="hover:text-red-600 transition-colors">Gallery</a></li> */}
-            <li> <Link to="/contact" className="hover:text-red-600 transition-colors">Contact</Link></li>
-          </ul>
-        </div>
-      )}
+      {/* Backdrop overlay */}
+      <div
+        className={`fixed inset-0 bg-black/70 transition-opacity duration-300 lg:hidden ${
+          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        style={{ top: "80px" }}
+        onClick={closeMenu}
+      />
 
+      {/* Mobile Menu — slides down and fades */}
+      <div
+        className={`lg:hidden absolute top-full left-0 right-0 bg-black border-t border-zinc-800 overflow-hidden transition-all duration-300 ease-out ${
+          isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <ul className="flex flex-col px-6 py-4">
+          {navItems.map((item, index) => (
+            <li
+              key={item.to}
+              className={`border-b border-zinc-900 last:border-none transition-all duration-300 ${
+                isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
+              }`}
+              style={{ transitionDelay: isOpen ? `${index * 60}ms` : "0ms" }}
+            >
+              <Link
+                to={item.to}
+                onClick={closeMenu}
+                className="block py-4 text-base font-semibold uppercase tracking-wide hover:text-red-600 hover:pl-2 transition-all duration-200"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      
     </nav>
   );
 }

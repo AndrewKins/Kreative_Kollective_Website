@@ -21,7 +21,7 @@ function Teams() {
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Kreative Kontrol */}
-        <div className="group rounded-2xl overflow-hidden bg-black border border-zinc-800 shadow-xl shadow-black/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-950/40">
+        <div  className="group rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800 shadow-lg shadow-black/60 ring-1 ring-red-600/0 transition-all duration-300 hover:-translate-y-2 hover:ring-red-600/50 hover:shadow-2xl hover:shadow-red-600/20">
           <img
             src={kontrolCompImage}
             className="w-full h-[300px] object-cover border-b-2 border-red-600 transition-transform duration-500 group-hover:scale-105"
@@ -53,7 +53,7 @@ function Teams() {
         </div>
 
         {/* Kreative Kaliber */}
-        <div className="group rounded-2xl overflow-hidden bg-black border border-zinc-800 shadow-xl shadow-black/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-950/40">
+        <div className="group rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800 shadow-lg shadow-black/60 ring-1 ring-yellow-500/0 transition-all duration-300 hover:-translate-y-2 hover:ring-yellow-500/50 hover:shadow-2xl hover:shadow-yellow-500/20">
           <img
             src={kaliberCompImage}
             alt="Kreative Kaliber"
@@ -85,7 +85,7 @@ function Teams() {
         </div>
 
         {/* Kreative Kingz */}
-        <div className="group rounded-2xl overflow-hidden bg-black border border-zinc-800 shadow-xl shadow-black/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-zinc-700/40">
+        <div className="group rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800 shadow-lg shadow-black/60 ring-1 ring-white/0 transition-all duration-300 hover:-translate-y-2 hover:ring-white/40 hover:shadow-2xl hover:shadow-white/10">
           <img
             src={kingzCompImage}
             className="w-full h-[300px] object-cover border-b-2 border-white transition-transform duration-500 group-hover:scale-105"
