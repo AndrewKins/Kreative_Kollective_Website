@@ -61,7 +61,7 @@ function Footer() {
             <span className="text-red-600">Kreative</span> Kollective
           </p>
           <p className="text-yellow-500 text-xs uppercase tracking-widest mt-2 font-bold">
-            Step. Lead. Create. Ascend.
+            Kreativity. Knowledge. Kommunity. Kharacter.
           </p>
         </div>
 

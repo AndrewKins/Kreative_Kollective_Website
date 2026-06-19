@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // import heroImage from "../assets/kk-nationals.JPEG";
 import kontrolCompImage from "../assets/kreative_kontrol_komp.JPG"
 import kaliberCompImage from "../assets/kreative_kaliber_komp.JPG"
@@ -27,12 +29,17 @@ function Teams() {
           />
           <h3 className="text-xl font-black uppercase">KREATIVE KONTROL</h3>
           <p className="text-red-500 font-bold uppercase text-sm tracking-wider mt-1">Middle School Co-Ed</p>
-          <p className="text-gray-300 text-sm met-2">Grades 6-8</p>
+          <p className="text-gray-300 text-sm mt-2">Grades 6-8</p>
           <p className="text-gray-300 text-sm mt-2">
             Building the Foundation, Learning Discipline & Teamwork.
             
           </p>
-          <button className="mt-4 border-2 border-white text-white font-bold uppercse tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200 ">Learn More</button>
+          <Link
+  to="/teams?team=kontrol"
+  className="mt-4 border-2 border-white text-white font-bold uppercase tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200"
+>
+  Learn More
+</Link>
         </div>
 
         <div className="flex flex-col items-center text-center">
@@ -43,7 +50,12 @@ function Teams() {
           <p className="text-gray-300 text-sm mt-2">
             Elevating Skill, Leadership & Performance at the Highest Level.
           </p>
-          <button className="mt-4 border-2 border-white text-white font-bold uppercase tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">Learn More</button>
+          <Link
+  to="/teams?team=kaliber"
+  className="mt-4 border-2 border-white text-white font-bold uppercase tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200"
+>
+  Learn More
+</Link>
         </div>
 
         <div className="flex flex-col items-center text-center">
@@ -54,7 +66,12 @@ function Teams() {
           <p className="text-gray-300 text-sm mt-2">
             Developing Young Men of Character, Strength & Excellence.
           </p>
-          <button className="mt-4 border-2 border-white text-white font-bold uppercase tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">Learn More</button>
+         <Link
+  to="/teams?team=kingz"
+  className="mt-4 border-2 border-white text-white font-bold uppercase tracking-wider px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200"
+>
+  Learn More
+</Link>
         </div>
       </div>
     </section>

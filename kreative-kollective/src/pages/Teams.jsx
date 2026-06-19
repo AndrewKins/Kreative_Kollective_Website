@@ -1,26 +1,33 @@
 import { useState } from "react";
-import kontrollogo from "../assets/kreative_kontrol_logo_transparent.png"
-import kaliberlogo from "../assets/kreative_kaliber_logo_transparent.png"
-import kingzlogo from "../assets/kreative_kingz_logo_transparent.png"
+import { useSearchParams } from "react-router-dom";
 
-import kontrolgalleryOne from "../assets/kreative_kontrol_gallery.JPEG"
-import kontrolgalleryTwo from "../assets/kontrol_gallery_2.JPEG"
-import kontrolgalleryThree from "../assets/kontrol_gallery_3.JPEG"
+import kontrollogo from "../assets/kreative_kontrol_logo_transparent.png";
+import kaliberlogo from "../assets/kreative_kaliber_logo_transparent.png";
+import kingzlogo from "../assets/kreative_kingz_logo_transparent.png";
 
-import kalibergalleryOne from "../assets/kaliber_gallery_1.JPG"
-import kalibergalleryTwo from "../assets/kaliber_gallery_2.JPEG"
-import kalibergalleryThree from "../assets/kaliber_gallery_3.JPG"
+import kontrolgalleryOne from "../assets/kreative_kontrol_gallery.JPEG";
+import kontrolgalleryTwo from "../assets/kontrol_gallery_2.JPEG";
+import kontrolgalleryThree from "../assets/kontrol_gallery_3.JPEG";
 
-import kingzgalleryOne from "../assets/kingz_gallery_1.JPG"
-import kingzgalleryTwo from "../assets/kingz_gallery_2.JPG"
-import kingzgalleryThree from "../assets/kingz_gallery_3.JPG"
+import kalibergalleryOne from "../assets/kaliber_gallery_1.JPG";
+import kalibergalleryTwo from "../assets/kaliber_gallery_2.JPEG";
+import kalibergalleryThree from "../assets/kaliber_gallery_3.JPG";
 
+import kingzgalleryOne from "../assets/kingz_gallery_1.JPG";
+import kingzgalleryTwo from "../assets/kingz_gallery_2.JPG";
+import kingzgalleryThree from "../assets/kingz_gallery_3.JPG";
 
-
-
+const validTeams = ["kontrol", "kaliber", "kingz"];
 
 function Teams() {
-  const [activeTeam, setActiveTeam] = useState("kontrol");
+  const [searchParams] = useSearchParams();
+
+  const teamFromUrl = searchParams.get("team");
+
+  const [activeTeam, setActiveTeam] = useState(
+    validTeams.includes(teamFromUrl) ? teamFromUrl : "kontrol"
+  );
+
   const [activePhoto, setActivePhoto] = useState(0);
 
   const teams = {
