@@ -33,19 +33,19 @@ function Hero() {
         <div className="mt-4 md:mt-6 flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3">
           <a
             href="https://forms.gle/yyx8TxccjNqXXrDJ7"
-            className="text-center bg-red-600 md:hover:bg-red-700 active:bg-red-900 active:scale-95 text-white font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-all duration-200"
+            className="rounded-full text-center bg-red-600 md:hover:bg-red-700 active:bg-red-900 active:scale-95 text-white font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-all duration-200"
           >
             Join the Kollective
           </a>
           <a
             href="/bookus"
-            className="text-center border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-colors duration-200"
+            className="rounded-full text-center border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-colors duration-200"
           >
             Book Us
           </a>
           <a
             href="/donate"
-            className="text-center border-2 border-white text-white hover:bg-white hover:text-black font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-colors duration-200"
+            className="rounded-full text-center border-2 border-white text-white hover:bg-white hover:text-black font-bold uppercase tracking-wider px-5 py-2.5 text-xs md:text-sm transition-colors duration-200"
           >
             Donate
           </a>

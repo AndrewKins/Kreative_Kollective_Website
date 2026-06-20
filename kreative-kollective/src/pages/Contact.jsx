@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 
 function Contact() {
-  const email = "kreativekollective@gmail.com";
+  const email = "kreativekollectivenyc@gmail.com";
   const instagramUrl = "https://www.instagram.com/kreativekollectivenyc";
   const instagramHandle = "@kreativekollectivenyc";
 

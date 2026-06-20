@@ -1,7 +1,7 @@
 import kreativekollectiveteam from "../assets/kreative-kollective.JPG"
 import Footer from "../components/Footer";
 function Donate() {
-  const goFundMeLink = "https://www.gofundme.com/f/help-kreative-kollective-compete-nationally";
+  const goFundMeLink = "https://gofund.me/70b2d59fb";
   const cashAppLink = "https://cash.app/$kreativekollective21";
   const cashAppName = "$kreativekollective21";
 
