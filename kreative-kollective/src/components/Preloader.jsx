@@ -79,7 +79,7 @@ function Preloader({ onComplete }) {
         <p className="text-white font-black uppercase tracking-[0.2em] text-sm">
           Kreative Kollective
         </p>
-        <p className="text-yellow-500 font-bold uppercase tracking-widest text-xs mt-1">
+        <p className="text-yellow-400 font-bold uppercase tracking-widest text-xs mt-1">
           Kreativity. Knowledge. Kommunity. Kharacter.
         </p>
       </div>
