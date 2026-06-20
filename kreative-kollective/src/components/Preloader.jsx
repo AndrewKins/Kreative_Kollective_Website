@@ -80,7 +80,7 @@ function Preloader({ onComplete }) {
           Kreative Kollective
         </p>
         <p className="text-yellow-500 font-bold uppercase tracking-widest text-xs mt-1">
-          Step. Lead. Create. Ascend.
+          Kreativity. Knowledge. Kommunity. Kharacter.
         </p>
       </div>
 
