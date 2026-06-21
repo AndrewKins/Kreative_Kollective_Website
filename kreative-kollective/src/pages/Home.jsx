@@ -5,6 +5,7 @@ import Mission from "../components/Mission";
 import TeamsPreview from "../components/TeamsPreview";
 import ProgramsPreview from "../components/ProgramsPreview";
 import Footer from "../components/Footer";
+import AnnouncementBar from "../components/AnnouncementBar";
 
 function Home() {
   const [loading, setLoading] = useState(() => {
@@ -19,7 +20,7 @@ function Home() {
   return (
     <>
       {loading && <Preloader onComplete={handlePreloaderComplete} />}
-
+      <AnnouncementBar />
       <Hero />
       <Mission />
       <TeamsPreview />
