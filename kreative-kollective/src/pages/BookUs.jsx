@@ -46,14 +46,14 @@ function BookUs() {
             <div>
               <p className="text-zinc-500 uppercase text-xs font-bold tracking-widest mb-1">Email</p>
               <a href="mailto:kreativekollective@gmail.com" className="text-xl font-bold text-yellow-500 hover:text-yellow-400 transition-colors">
-                kreativekollective@gmail.com
+                kreativekollectivenyc@gmail.com
               </a>
             </div>
 
             <div className="border-t border-zinc-800 pt-6">
               <p className="text-zinc-500 uppercase text-xs font-bold tracking-widest mb-1">Phone</p>
               <a href="tel:6466301333" className="text-xl font-bold text-white hover:text-yellow-500 transition-colors">
-                646-630-1333
+                347-309-6105
               </a>
             </div>
 
