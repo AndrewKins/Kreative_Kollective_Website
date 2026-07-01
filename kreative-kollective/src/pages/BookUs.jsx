@@ -45,7 +45,7 @@ function BookUs() {
           <div className="mt-10 bg-zinc-950 border border-zinc-800 p-8 space-y-6">
             <div>
               <p className="text-zinc-500 uppercase text-xs font-bold tracking-widest mb-1">Email</p>
-              <a href="mailto:kreativekollective@gmail.com" className="text-xl font-bold text-yellow-500 hover:text-yellow-400 transition-colors">
+              <a href="mailto:kreativekollectivenyc@gmail.com" className="text-xl font-bold text-yellow-500 hover:text-yellow-400 transition-colors break-all">
                 kreativekollectivenyc@gmail.com
               </a>
             </div>

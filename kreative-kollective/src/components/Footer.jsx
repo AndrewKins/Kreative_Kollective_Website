@@ -82,7 +82,7 @@ function Footer() {
               Our Teams
             </a>
             <a
-              href="/book-us"
+              href="/bookus"
               className="hover:text-yellow-500 transition-colors"
             >
               Book Us
@@ -128,7 +128,7 @@ function Footer() {
 
       {/* Bottom bar */}
       <div className="mt-10 border-t border-zinc-800 pt-4 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} Kreative Kollective. All rights reserved.
+        © {new Date().getFullYear()} Kreative Kollective. All rights reserved. 
       </div>
     </footer>
   );

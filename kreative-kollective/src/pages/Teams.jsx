@@ -252,7 +252,7 @@ function Teams() {
                       className={`rounded-lg border border-zinc-800 bg-black px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:${accent.border} active:scale-95`}
                       style={{ transitionDelay: `${index * 40}ms` }}
                     >
-                      <p className="text-yellow-500 font-black uppercase text-sm">
+                      <p className="text-yellow-500 font-black uppercase text-xs md:text-sm break-words leading-tight">
                         {principle}
                       </p>
                     </div>
